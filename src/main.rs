@@ -1,9 +1,13 @@
+use m::{class::ClassName, gi::guess_it, test::test};
+
 mod m;
 
 fn main() {
-    println!("Hello, world!");
-    let c : m::class::ClassName = m::class::ClassName::new(12);
+    let mut c: ClassName = ClassName::new(12);
+    let s: String = String::from("rs");
     c.print();
-    m::test::test();
-    m::gi::guess_it();
+    c.hi(s.clone());
+    print!("{:#?}", c);
+    test();
+    guess_it();
 }

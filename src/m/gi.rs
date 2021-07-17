@@ -2,7 +2,6 @@ use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
 
-
 pub fn guess_it() {
     println!("Guess the number!");
 
